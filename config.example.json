@@ -6,7 +6,7 @@
   },
   "upstream": {
     "base_url": "",
-    "provider_id": "builtin:bigmodel-coding-plan",
+    "provider_id": "builtin:zai-start-plan",
     "gateway_origin": "https://zcode.z.ai",
     "device_id": "generated-and-persisted-by-the-launcher",
     "api_key": "",

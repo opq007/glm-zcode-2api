@@ -62,7 +62,7 @@ func newGateway(t *testing.T, upstreamURL string) http.Handler {
 	t.Helper()
 	dir := t.TempDir()
 	zcodeConfig := filepath.Join(dir, "config.json")
-	document := `{"provider":{"builtin:bigmodel-coding-plan":{"name":"BigModel - Coding Plan","kind":"anthropic","enabled":true,"options":{"apiKey":"upstream-key","baseURL":"` + upstreamURL + `"}}}}`
+	document := `{"provider":{"builtin:zai-start-plan":{"name":"ZAI - Start Plan","kind":"anthropic","enabled":true,"options":{"apiKey":"upstream-key","baseURL":"` + upstreamURL + `"}}}}`
 	if err := os.WriteFile(zcodeConfig, []byte(document), 0o600); err != nil {
 		t.Fatalf("write ZCode config: %v", err)
 	}

@@ -201,7 +201,7 @@ curl -s http://192.168.x.x:7864/v1/models -H "Authorization: Bearer $KEY"
 | `listen` | `0.0.0.0:7864` | 监听地址：`0.0.0.0` = 局域网可访问（当前默认），`127.0.0.1:7864` = 仅本机 |
 | `api_key` | 由启动器生成 | 客户端访问口令；空 = 不鉴权 |
 | `server.max_body_mb` | `16` | 请求体上限，超限返回 413 |
-| `upstream.provider_id` | `builtin:bigmodel-coding-plan` | 取 ZCode 配置里哪个 provider 的密钥 |
+| `upstream.provider_id` | `builtin:zai-start-plan` | 取 ZCode 配置里哪个 provider 的密钥 |
 | `upstream.credential_config_path` | `~/.zcode/v2/config.json` | ZCode 配置路径 |
 | `upstream.base_url` / `api_key` | 空 | 非空则覆盖从 ZCode 读到的值 |
 | `upstream.gateway_origin` | `https://zcode.z.ai` | 官方 Coding Plan 流量经此平台网关（套餐权益校验处）；置空 = 直连模型服务 |

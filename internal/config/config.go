@@ -79,7 +79,7 @@ func Default() *Config {
 		Server: Server{MaxBodyMB: 16},
 		Upstream: Upstream{
 			GatewayOrigin:        "https://zcode.z.ai",
-			ProviderID:           "builtin:bigmodel-coding-plan",
+			ProviderID:           "builtin:zai-start-plan",
 			AnthropicVersion:     "2023-06-01",
 			UserAgent:            "glm-zcode-2api/0.1",
 			TimeoutSeconds:       120,

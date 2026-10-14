@@ -30,7 +30,7 @@ ZCODE_CONFIG = Path.home() / ".zcode/v2/config.json"
 BASE = "http://127.0.0.1:7864"
 PORT = 7864
 BINARY = REPO / "bin/glm-zcode-2api"
-DEFAULT_PROVIDER = "builtin:bigmodel-coding-plan"
+DEFAULT_PROVIDER = "builtin:zai-start-plan"
 
 
 def secure_write(path, value):
